@@ -15,7 +15,7 @@ func main() {
 		firstSectionRange := toBoundary(pair[0])
 		secondSectionRange := toBoundary(pair[1])
 
-		if intersection := firstSectionRange.Union(secondSectionRange); intersection.Equal(firstSectionRange) || intersection.Equal(secondSectionRange) {
+		if intersection := firstSectionRange.Intersection(secondSectionRange); intersection.Any() {
 			fullyContained++
 		}
 	}
