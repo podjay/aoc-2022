@@ -18,7 +18,7 @@ var requiredOutcomes = map[string]Outcome{
 }
 
 func main() {
-	scanner := file.Scanner("2022/2/2.txt")
+	scanner := file.Scanner("2/2.txt")
 	score := 0
 	for scanner.Scan() {
 		text := strings.Split(scanner.Text(), " ")
